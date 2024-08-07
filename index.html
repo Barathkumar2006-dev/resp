@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script defer src="app.js"></script>
+
+</head>
+<body>
+
+    <nav>
+
+        <ul class="sidebar">
+
+            <li onclick=offButton()><a href="#"class="cross"><i class='bx bx-x-circle'></i></a></li>
+
+            <div class="item">
+
+                <li><a href="#">About Us </a></li>
+                <li><a href="#">value Set</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </div>
+                 
+        </ul>
+    
+        <ul class="mainbar">
+    
+        <li><a href="#"class="logo">Logdev...</a></li>
+        <li><a href="#" class="hideOn">About Us</a></li>
+        <li><a href="#" class="hideOn">Value Set</a></li>
+        <li><a href="#"class="hideOn">Feedback</a></li>
+        <li><a href="#" class="hideOn">Contact Us</a></li>
+        <li onclick=ShowSideBar()><a href="#"><i class='bx bx-menu'></i></a></li>
+
+        </ul>
+    
+    </nav>
+
+   <script>
+
+    function ShowSideBar()
+    {
+ 
+
+        const side = document.querySelector(".sidebar");
+
+        side.style.display = 'flex';
+ 
+    }
+  
+    function offButton()
+    {
+
+        const side = document.querySelector(".sidebar");
+ 
+        side.style.display = 'none';
+
+    }
+
+
+   </script>
+
+
+   <section class="main-content">
+   
+        <div class="left-content">   
+
+            <h3><span class="fornt">Hey</span> >> <span class="size" > I'm                
+            </span>  <span class="fornt">Barath</span> 🖐️</h3>
+            <h1><span class="fornt">Front</span>end<br>Developer</h1>
+            <br>
+            <p class="para">hi I am frontend developer , My value is to provide a stunning design and <br>  speed  loading website for the costumer..  </p>
+
+            <div class="two-button">
+
+                <button class="hire-button">Contact Me</button>
+                <button class="project-button">my project</button>
+            
+            </div>
+
+        </div>
+
+
+        <div class="image-main">
+
+        <img class="main-photo" src="img-6.jpg">
+
+        </div>
+
+    </section>
+
+    <section class="value-content">
+
+
+    <div class="value-image">
+
+        <img class="building" src="building.jpg" width="400px">
+
+    </div>
+
+
+    </section>
+
+
+</body>
+
+
+
+</html>
